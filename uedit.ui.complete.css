@@ -1,0 +1,113 @@
+ul.uedit_complete_button_strip
+{
+    width: 580px;
+    height: 32px;
+    position: relative;
+    margin: 0 0 10px 0;
+    padding:0;
+    
+}
+
+.uedit_complete_textarea
+{
+    width: 580px;
+    height: 500px;
+    border: 1px solid #888888;
+}
+
+li.uedit_complete_button
+{
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute; 
+    top: 0;
+}
+
+li.uedit_complete_button a
+{
+    display: block;   
+    background: transparent url(gfx/strip.png) 0 0 no-repeat;
+    height: 32px;
+}
+
+/* Button sprites */
+li.uedit_complete_button_align_left a { background-position: 0px 0px; }
+li.uedit_complete_button_align_left a:hover { background-position: 0px -32px; }
+
+li.uedit_complete_button_align_center a { background-position: -32px 0px; }
+li.uedit_complete_button_align_center a:hover { background-position: -32px -32px; }
+
+li.uedit_complete_button_align_right a { background-position: -64px 0px; }
+li.uedit_complete_button_align_right a:hover { background-position: -64px -32px; }
+
+li.uedit_complete_button_align_justified a { background-position: -96px 0px; }
+li.uedit_complete_button_align_justified a:hover { background-position: -96px -32px; }
+
+li.uedit_complete_button_bold a { background-position: -128px 0px; }
+li.uedit_complete_button_bold a:hover { background-position: -128px -32px; }
+
+li.uedit_complete_button_italic a { background-position: -160px 0px; }
+li.uedit_complete_button_italic a:hover { background-position: -160px -32px; }
+
+li.uedit_complete_button_deleted a { background-position: -192px 0px; }
+li.uedit_complete_button_deleted a:hover { background-position: -192px -32px; }
+
+li.uedit_complete_button_code a { background-position: -256px 0px; }
+li.uedit_complete_button_code a:hover { background-position: -256px -32px; }
+
+li.uedit_complete_button_help a { background-position: -288px 0px; }
+li.uedit_complete_button_help a:hover { background-position: -288px -32px; }
+
+li.uedit_complete_button_link a { background-position: -320px 0px; }
+li.uedit_complete_button_link a:hover { background-position: -320px -32px; }
+
+li.uedit_complete_button_video a { background-position: -352px 0px; }
+li.uedit_complete_button_video a:hover { background-position: -352px -32px; }
+
+li.uedit_complete_button_image a { background-position: -384px 0px; }
+li.uedit_complete_button_image a:hover { background-position: -384px -32px; }
+
+li.uedit_complete_button_ulist a { background-position: -416px 0px; }
+li.uedit_complete_button_ulist a:hover { background-position: -416px -32px; }
+
+li.uedit_complete_button_numlist a { background-position: -448px 0px; }
+li.uedit_complete_button_numlist a:hover { background-position: -448px -32px; }
+
+li.uedit_complete_button_undo a { background-position: -480px 0px; }
+li.uedit_complete_button_undo a:hover { background-position: -480px -32px; }
+li.uedit_complete_button_undo_light a { background-position: -480px -32px; }
+
+li.uedit_complete_button_redo a { background-position: -512px 0px; }
+li.uedit_complete_button_redo a:hover { background-position: -512px -32px; }
+li.uedit_complete_button_redo_light a { background-position: -512px -32px; }
+
+/* Button positions */
+
+li.uedit_complete_button_align_left { left: 0px; }
+li.uedit_complete_button_align_center { left: 32px; }
+li.uedit_complete_button_align_right { left: 64px; }
+li.uedit_complete_button_align_justified { left: 96px; }
+
+li.uedit_complete_button_bold { left: 138px; }
+li.uedit_complete_button_italic { left: 170px; }
+li.uedit_complete_button_deleted { left: 202px; }
+
+li.uedit_complete_button_ulist { left: 244px; }
+li.uedit_complete_button_numlist { left: 276px; }
+
+li.uedit_complete_button_code { left: 318px; }
+li.uedit_complete_button_link { left: 350px; }
+li.uedit_complete_button_video { left: 382px; }
+li.uedit_complete_button_image { left: 414px; }
+
+li.uedit_complete_button_undo { left: 456px; }
+li.uedit_complete_button_redo { left: 488px; }
+
+li.uedit_complete_button_help { right: 0; }
+
+
+
+
