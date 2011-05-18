@@ -1,0 +1,108 @@
+/* Forms */
+#uedit_ui_form_modal_overlay
+{
+    position:absolute;
+    top: 0;
+    background-color: #353535;    
+    filter:alpha(opacity=60);
+    opacity:0.6;
+    z-index: 999;
+}
+
+.uedit_ui_form
+{
+    position: absolute;
+    background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 1000;
+    outline: none;
+    border-radius: 15px;
+    -moz-border-radius-bottomright: 15px;
+    -moz-border-radius-bottomleft: 15px;
+}
+
+.uedit_ui_form_text
+{
+    border: none;
+    position: absolute;
+    width: 170px;
+}
+
+.uedit_ui_form_close
+{
+    text-decoration: none;
+    color: blue;
+    display:block;
+    float: right;   
+    font-size: 10px;
+    font-family: Monospace;
+    cursor: pointer;
+}
+
+.uedit_ui_form_label
+{
+    color: #3b2828;
+    font-size: 12px;
+    position: absolute;
+}
+
+.uedit_ui_form_link
+{
+    color: blue;
+    font-size: 12px;
+    position: absolute;
+}
+
+.uedit_ui_form_button_ok
+{
+    width: 250px;
+    height: 15px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #3D71A4;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    -moz-border-radius-bottomright: 15px;
+    -moz-border-radius-bottomleft: 15px;
+}
+
+
+
+.uedit_ui_youtube
+{
+    position:absolute;
+    display: block;   
+    background: transparent url(gfx/strip.png) 0px -64px no-repeat;
+    height: 40px;
+    width: 101px;
+    top: 25px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.uedit_ui_bliptv
+{
+    position:absolute;
+    display: block;   
+    background: transparent url(gfx/strip.png) -101px -64px no-repeat;
+    height: 40px;
+    width: 80px;
+    top: 25px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.uedit_ui_video_tooltip
+{
+    position: absolute;
+    top: 70px;
+    left: 10px;
+}
+
