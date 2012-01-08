@@ -32,6 +32,10 @@ var UeditUserInterfaceComplete = (function(){
     function log(record){
         var now = new Date();
         
+        if (typeof UEDIT_DEBUG === "undefined") {
+            return;
+        }
+
         typeof console !== "undefined" && console.log(
             "uedit_complete -> [" + now.getHours() + ":" 
                 + now.getMinutes() + ":" 
