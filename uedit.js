@@ -56,7 +56,12 @@ var Uedit = function(){
         
     function log(record){
         var now = new Date();
+       
         
+        if (typeof UEDIT_DEBUG === "undefined") {
+            return;
+        }
+
         typeof console !== "undefined" && console.log(
             "uedit -> [" + now.getHours() + ":" 
                 + now.getMinutes() + ":" 
