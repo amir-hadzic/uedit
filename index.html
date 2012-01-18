@@ -24,8 +24,9 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                 var uedit_textarea = document.getElementById("uedit_textarea");
                 var uedit_button_strip = document.getElementById("uedit_button_strip");
                 var ueditorInterface = ueditInterface(uedit_textarea, uedit_button_strip);
-            
-                jscommits.showCommits("amir-hadzic", "uedit", "uedit-commits");
+                
+                var commitsDiv = document.getElementById("uedit-commits");
+                jscommits.showCommits("amir-hadzic", "uedit", commitsDiv);
             </script>
         </center>
     </body>
