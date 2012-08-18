@@ -1,0 +1,3 @@
+[submodule "jscommits"]
+	path = jscommits
+	url = http://github.com/amir-hadzic/jscommits.git

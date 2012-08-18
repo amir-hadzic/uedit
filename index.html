@@ -1,34 +1,82 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta http-equiv="Pragma" content="no-cache" />
-        <meta http-equiv="Expires" content="-1" />
-        <title>uedit</title>
-        <link type="text/css" rel="stylesheet" href="uedit.ui.css" />
-        <link type="text/css" rel="stylesheet" href="uedit.ui.complete.css" />
-        <link type="text/css" rel="stylesheet" href="jscommits-min.css" />
-        <script type="text/javascript" src="uedit.js"></script>
-        <script type="text/javascript" src="uedit.ui.complete.js"></script>
-        <script type="text/javascript" src="jscommits-min.js"></script>
-    </head>
-    <body>
-        <center>       
-            <ul style="margin-top: 50px" id="uedit_button_strip"></ul>
-            <textarea class="uedit_complete_textarea" id="uedit_textarea" cols=20 rows=20 style="margin-bottom: 100px">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+<!DOCTYPE html>
+<html>
 
-The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</textarea>
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="uedit : Javascript markdown editor" />
 
-            <div id="uedit-commits" style="text-align: left"></div>
-            <script type="text/javascript">
-                var uedit_textarea = document.getElementById("uedit_textarea");
-                var uedit_button_strip = document.getElementById("uedit_button_strip");
-                var ueditorInterface = ueditInterface(uedit_textarea, uedit_button_strip);
-                
-                var commitsDiv = document.getElementById("uedit-commits");
-                jscommits.showCommits("amir-hadzic", "uedit", commitsDiv);
-            </script>
-        </center>
-    </body>
+    <link rel="stylesheet" type="text/css" media="screen" href="static/stylesheet.css">
+    <link type="text/css" rel="stylesheet" href="static/uedit.ui.css" />
+    <link type="text/css" rel="stylesheet" href="static/uedit.ui.complete.css" />
+    <link type="text/css" rel="stylesheet" href="jscommits/jscommits-min.css" />
+    <title>uedit</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/amir-hadzic/uedit">View on GitHub</a>
+
+          <h1 id="project_title">uedit</h1>
+          <h2 id="project_tagline">Simple javascript markdown editor</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/amir-hadzic/uedit/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/amir-hadzic/uedit/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+        <section id="main_content" class="inner">
+        <h2>Demo</h2>
+        
+        <p>You can use the editor below to try out some of the uedit features.</p>
+
+        <ul style="margin-top: 50px" id="uedit_button_strip"></ul>
+        <textarea class="uedit_complete_textarea" id="uedit_textarea" cols=20 rows=20>
+Contrary to popular belief, Lorem Ipsum is not simply random text.  It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+            
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+        </textarea>
+
+        <h2>Latest commits on the project:</h2>
+        <div id="commits"></div>
+        </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">uedit maintained by <a href="https://github.com/amir-hadzic">amir-hadzic</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+
+    <script type="text/javascript" src="jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="underscore-min.js"></script>
+    <script type="text/javascript" src="jscommits/jscommits-min.js"></script>
+    <script type="text/javascript" src="uedit.js"></script>
+    <script type="text/javascript" src="uedit.ui.complete.js"></script>
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        
+        try {
+            var pageTracker = _gat._getTracker("UA-34180728-1");
+            pageTracker._trackPageview();
+        } catch(err) {}
+
+        var uedit_textarea = document.getElementById("uedit_textarea");
+        var uedit_button_strip = document.getElementById("uedit_button_strip");
+        var ueditorInterface = ueditInterface(uedit_textarea, uedit_button_strip);
+
+        jscommits.showCommits("amir-hadzic", "uedit", document.getElementById("commits"));
+    </script>
+  </body>
 </html>
