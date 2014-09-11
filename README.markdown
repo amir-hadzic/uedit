@@ -1,3 +1,5 @@
+## Note: This project is no longer maintained!
+
 # About
 
 Uedit is a simple markdown editor that works as expected in IE6+, Chromium, Firefox, Opera and Safari.
